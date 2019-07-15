@@ -95,3 +95,15 @@ hotspot_4 10W
 0.2 7.0 0.2 0.2
 0.2 0.2 0.2 0.2
 0.2 0.2 0.2 0.2
+
+NOTE for version 2 of this dataset.
+Some issues were found in the first version of the dataset, namely:
+- a software issue in one device driver caused the temperature of two
+  experiments to be "rotated", T(1) was actually T(16), T(2) was T(1), ...
+  This issue has been fixed.
+- a hardware modification altered the calibration parameters, causing
+  temperatures to be off by up to 1.5°C. The device has been recalibrated and
+  the appropriate calibration was applied post-facto to the dataset.
+- some experiments exhibited bad thermal contact between the some heating
+  elements of the chip and heatsink, those experiments have been redone.
+These issues only affect the heatsink_with_fan dataset.
